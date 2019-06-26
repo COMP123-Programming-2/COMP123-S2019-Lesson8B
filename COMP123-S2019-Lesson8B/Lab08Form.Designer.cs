@@ -28,7 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.TitleLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
+            // 
+            // TitleLabel
+            // 
+            this.TitleLabel.AutoSize = true;
+            this.TitleLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F);
+            this.TitleLabel.Location = new System.Drawing.Point(0, 0);
+            this.TitleLabel.Name = "TitleLabel";
+            this.TitleLabel.Size = new System.Drawing.Size(116, 37);
+            this.TitleLabel.TabIndex = 0;
+            this.TitleLabel.Text = "Lab 08";
             // 
             // Lab08Form
             // 
@@ -36,14 +47,18 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGray;
             this.ClientSize = new System.Drawing.Size(624, 441);
+            this.Controls.Add(this.TitleLabel);
             this.Name = "Lab08Form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Lab 08";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Label TitleLabel;
     }
 }
 
